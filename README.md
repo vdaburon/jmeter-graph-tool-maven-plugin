@@ -1,4 +1,4 @@
-#jmeter-graph-tool-maven-plugin
+# jmeter-graph-tool-maven-plugin
 
 A maven plugin to create graphs using the **JMeter Plugins CMDRunner** from JMeter result files (\*.jtl or \*.csv) or using **Filter Results Tool**.
 
@@ -14,7 +14,7 @@ Note: DBMon monitoring graph do not work with this version (log library trouble)
 ## License
 See the LICENSE file (Apache 2) [https://www.apache.org/licenses/LICENSE-2.0](https://www.apache.org/licenses/LICENSE-2.0)
 
-##Usage
+## Usage
 
 
 Just include the plugin in your `pom.xml` and execute `mvn jmeter-graph:create-graph`.
@@ -227,7 +227,7 @@ You can also bind the graph-generation to a maven-phase, e.g. `verify`:
 </project>
 ```
 
-###Parameters for a graph (depends of the pluginType) :
+### Parameters for a graph (depends of the pluginType) :
 - inputFile
 - pluginType
 - width
