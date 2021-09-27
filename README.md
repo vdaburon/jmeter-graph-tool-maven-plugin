@@ -22,27 +22,27 @@ Some graphs generated with this plugin
 
 Active Threads Over Time with 2 Thread Groups
 
-![Active Threads Over Time.png with 2 Thread Groups](graphs_demo/Active Threads Over Time.png)
+![Active Threads Over Time.png with 2 Thread Groups](graphs_demo/Active%20Threads%20Over%20Time.png)
 
 Response Times Over Time only pages for Thread Group SC01 force Y to 1000 ms
 
-![Response Times Over Time SC01](graphs_demo/Response Times Over Time SC01.png)
+![Response Times Over Time SC01](graphs_demo/Response%20Times%20Over%20Time%20SC01.png)
 
 Response Times Over Time only pages for Thread Group SC03 force Y to 1000 ms
 
-![Response Times Over Time SC03](graphs_demo/Response Times Over Time SC03.png)
+![Response Times Over Time SC03](graphs_demo/Response%20Times%20Over%20Time%20SC03.png)
 
 Response Codes per Second (http status)
 
-![Response Codes per Second](graphs_demo/Response Codes per Second.png)
+![Response Codes per Second](graphs_demo/Response%20Codes%20per%20Second.png)
 
 Response Times Percentiles
 
-![Response Times Percentiles](graphs_demo/Response Times Percentiles.png)
+![Response Times Percentiles](graphs_demo/Response%20Times%20Percentiles.png)
 
 Synthesis Report filtered with regular expression for label (the plugin creates only csv result file not this table display)
 
-![Synthesis Report](graphs_demo/Synthesis Report.png)
+![Synthesis Report](graphs_demo/Synthesis%20Report.png)
 
 OS Monitoring CPU with PerfMon plugin
 
