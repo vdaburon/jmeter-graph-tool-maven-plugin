@@ -63,16 +63,16 @@ public class JMeterPluginsMojo extends AbstractMojo {
 	@Parameter(defaultValue = "${project.build.directory}/jmeter")
 	File workingDirectory;
 
-	@Component
+	@Parameter(defaultValue = "${project}", required = true, readonly = true)
 	MavenProject mavenProject;
 
-	@Component
+	@Parameter( defaultValue = "${session}", readonly = true)
 	MavenSession mavenSession;
 
 	@Component
 	BuildPluginManager pluginManager;
 
-	@Component
+	@Parameter( defaultValue = "${plugin}", readonly = true)
 	PluginDescriptor plugin;
 
 	@Override
