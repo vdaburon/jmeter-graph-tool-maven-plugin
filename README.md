@@ -59,6 +59,13 @@ Apache httpd monitoring with Page Data Extractor plugin
 
 ## Usage
 
+The maven groupId, artifactId and version, this plugin is in the **Maven Central Repository**
+
+```xml
+<groupId>io.github.vdaburon</groupId>
+<artifactId>jmeter-graph-tool-maven-plugin</artifactId>
+<version>1.0</version>
+```
 Just include the plugin in your `pom.xml` and execute `mvn jmeter-graph:create-graph`.
 
 ```xml
