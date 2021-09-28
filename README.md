@@ -48,7 +48,7 @@ OS Monitoring CPU with PerfMon plugin
 
 ![OS CPU](graphs_demo/Perfmon_CPU.png)
 
-JMX Monitoring for Tomcat (JVM CPU with JMXMon plugin)
+JMX Monitoring for Tomcat (JVM Memory with JMXMon plugin)
 
 ![JMX Monitoring](graphs_demo/JMX_memory_jvm.png)
 
