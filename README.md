@@ -335,7 +335,7 @@ You can also bind the graph-generation to a maven-phase, e.g. `verify`:
 ## user.properties and jmeter.properties
 Files in the directory &lt;directoryTestFiles&gt; are **copied** by the **jmeter-graph-tool-maven-plugin** to the build directory &lt;MAVEN_PROJECT_DIRECTORY&gt;/target/jmeter/bin.
 
-You can put your jmeter.properties or your user.properties in the &lt;MAVEN_PROJECT_DIRECTORY&gt;/src/test/jmeter, files will be place by **jmeter-maven-plugin** in &lt;MAVEN_PROJECT_DIRECTORY&gt;/target/jmeter/testFiles (Note : ${project.build.directory} == &lt;MAVEN_PROJECT_DIRECTORY&gt;/target/), and declare 
+You can put your jmeter.properties or your user.properties in the &lt;MAVEN_PROJECT_DIRECTORY&gt;/src/test/jmeter, files will be place by **jmeter-maven-plugin** in &lt;MAVEN_PROJECT_DIRECTORY&gt;/target/jmeter/testFiles (Note : ${project.build.directory} == &lt;MAVEN_PROJECT_DIRECTORY&gt;/target), and declare 
 
 
 ```xml
@@ -390,7 +390,7 @@ Use maven-phase `verify`
     <modelVersion>4.0.0</modelVersion>
     <groupId>io.github.vdaburon.jmeter</groupId>
     <artifactId>jm_maven</artifactId>
-    <version>1.1</version>
+    <version>1.2</version>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>1.8</maven.compiler.source>
