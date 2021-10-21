@@ -407,7 +407,7 @@ Use maven-phase `verify`
             <plugin>
                 <groupId>com.lazerycode.jmeter</groupId>
                 <artifactId>jmeter-maven-plugin</artifactId>
-                <version>3.4.0</version>
+                <version>3.5.0</version>
                 <executions>
                     <!-- Generate JMeter configuration -->
                     <execution>
