@@ -64,7 +64,7 @@ The maven groupId, artifactId and version, this plugin is in the **Maven Central
 ```xml
 <groupId>io.github.vdaburon</groupId>
 <artifactId>jmeter-graph-tool-maven-plugin</artifactId>
-<version>1.0</version>
+<version>1.1</version>
 ```
 Just include the plugin in your `pom.xml` and execute `mvn jmeter-graph:create-graph`.
 
@@ -76,7 +76,7 @@ Just include the plugin in your `pom.xml` and execute `mvn jmeter-graph:create-g
             <plugin>
                 <groupId>io.github.vdaburon</groupId>
                 <artifactId>jmeter-graph-tool-maven-plugin</artifactId>
-                <version>1.0</version>
+                <version>1.1</version>
                 <configuration>
                     <!-- see Filter Results Tool in jmeter-plugins.org -->
                     <filterResultsTool>
@@ -244,7 +244,7 @@ You can also bind the graph-generation to a maven-phase, e.g. `verify`:
       <plugin>
         <groupId>io.github.vdaburon</groupId>
         <artifactId>jmeter-graph-tool-maven-plugin</artifactId>
-        <version>1.0</version>
+        <version>1.1</version>
         <executions>
           <execution>
             <id>create-graphs</id>
@@ -390,7 +390,7 @@ Use maven-phase `verify`
     <modelVersion>4.0.0</modelVersion>
     <groupId>io.github.vdaburon.jmeter</groupId>
     <artifactId>jm_maven</artifactId>
-    <version>1.2</version>
+    <version>1.3</version>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>1.8</maven.compiler.source>
@@ -407,7 +407,7 @@ Use maven-phase `verify`
             <plugin>
                 <groupId>com.lazerycode.jmeter</groupId>
                 <artifactId>jmeter-maven-plugin</artifactId>
-                <version>3.5.0</version>
+                <version>3.6.1</version>
                 <executions>
                     <!-- Generate JMeter configuration -->
                     <execution>
@@ -433,6 +433,10 @@ Use maven-phase `verify`
                     -->
                 </executions>
                 <configuration>
+                    <testPlanLibraries>
+                        <!-- add libraries in JMETER_HOME/lib -->
+                        <artifact>mysql:mysql-connector-java:8.0.30</artifact>
+                    </testPlanLibraries>
                     <jmeterExtensions>
                         <artifact>kg.apc:jmeter-plugins-functions:2.1</artifact>
                         <artifact>kg.apc:jmeter-plugins-casutg:2.9</artifact>
@@ -470,7 +474,7 @@ Use maven-phase `verify`
             <plugin>
                 <groupId>io.github.vdaburon</groupId>
                 <artifactId>jmeter-graph-tool-maven-plugin</artifactId>
-                <version>1.0</version>
+                <version>1.1</version>
                 <executions>
                     <execution>
                         <id>create-graphs</id>
