@@ -64,7 +64,7 @@ The maven groupId, artifactId and version, this plugin is in the **Maven Central
 ```xml
 <groupId>io.github.vdaburon</groupId>
 <artifactId>jmeter-graph-tool-maven-plugin</artifactId>
-<version>1.1</version>
+<version>1.2</version>
 ```
 Just include the plugin in your `pom.xml` and execute `mvn jmeter-graph:create-graph`.
 
@@ -76,7 +76,7 @@ Just include the plugin in your `pom.xml` and execute `mvn jmeter-graph:create-g
             <plugin>
                 <groupId>io.github.vdaburon</groupId>
                 <artifactId>jmeter-graph-tool-maven-plugin</artifactId>
-                <version>1.1</version>
+                <version>1.2</version>
                 <configuration>
                     <!-- see Filter Results Tool in jmeter-plugins.org -->
                     <filterResultsTool>
@@ -221,6 +221,9 @@ Just include the plugin in your `pom.xml` and execute `mvn jmeter-graph:create-g
                     <jMeterProcessJVMSettings>
                         <xms>${jvm_xms}</xms>
                         <xmx>${jvm_xmx}</xmx>
+                        <arguments>
+                            <argument>-Duser.language=en</argument>
+                        </arguments>
                     </jMeterProcessJVMSettings>
                     <!-- merge this properties with user.properties file in MAVEN_PROJECT_DIRECTORY/target/jmeter/bin -->
                     <!-- property format = <property_name>property_value</property name> will be property_name=property_value in the user.properties file. E.g. language=en -->
@@ -244,7 +247,7 @@ You can also bind the graph-generation to a maven-phase, e.g. `verify`:
       <plugin>
         <groupId>io.github.vdaburon</groupId>
         <artifactId>jmeter-graph-tool-maven-plugin</artifactId>
-        <version>1.1</version>
+        <version>1.2</version>
         <executions>
           <execution>
             <id>create-graphs</id>
@@ -474,7 +477,7 @@ Use maven-phase `verify`
             <plugin>
                 <groupId>io.github.vdaburon</groupId>
                 <artifactId>jmeter-graph-tool-maven-plugin</artifactId>
-                <version>1.1</version>
+                <version>1.2</version>
                 <executions>
                     <execution>
                         <id>create-graphs</id>
@@ -666,10 +669,10 @@ Use maven-phase `verify`
                             <jMeterProcessJVMSettings>
                                 <xms>${jvm_xms}</xms>
                                 <xmx>${jvm_xmx}</xmx>
+                                <arguments>
+                                    <argument>-Duser.language=en</argument>
+                                </arguments>
                             </jMeterProcessJVMSettings>
-                            <propertiesUser>
-                                <language>en</language>
-                            </propertiesUser>
                         </configuration>
                     </execution>
                 </executions>

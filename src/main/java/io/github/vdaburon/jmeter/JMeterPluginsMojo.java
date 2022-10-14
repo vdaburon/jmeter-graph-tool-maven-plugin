@@ -12,6 +12,7 @@ import org.apache.maven.plugins.annotations.Component;
 import org.apache.maven.plugins.annotations.Mojo;
 import org.apache.maven.plugins.annotations.Parameter;
 import org.apache.maven.project.MavenProject;
+import org.sonatype.inject.Parameters;
 import org.twdata.maven.mojoexecutor.MojoExecutor;
 import org.twdata.maven.mojoexecutor.MojoExecutor.Element;
 
@@ -56,6 +57,9 @@ public class JMeterPluginsMojo extends AbstractMojo {
 
 	@Parameter
 	JMeterProcessJVMSettings jMeterProcessJVMSettings;
+
+	@Parameters
+	List<String> arguments;
 
 	@Parameter
 	Map<String, String> propertiesUser;
@@ -212,8 +216,8 @@ public class JMeterPluginsMojo extends AbstractMojo {
 						}
 
 						if (jMeterProcessJVMSettings.arguments != null) {
-							for (Argument argument : jMeterProcessJVMSettings.arguments) {
-								elt = element(name("argument"), argument.argument);
+							for (int i = 0; i < jMeterProcessJVMSettings.arguments.size(); i++) {
+								elt = element(name("argument"), jMeterProcessJVMSettings.arguments.get(i));
 								listArguments.add(elt);
 							}
 						}
@@ -367,8 +371,8 @@ public class JMeterPluginsMojo extends AbstractMojo {
 						}
 
 						if (jMeterProcessJVMSettings.arguments != null) {
-							for (Argument argument : jMeterProcessJVMSettings.arguments) {
-								elt = element(name("argument"), argument.argument);
+							for (String anArgument : jMeterProcessJVMSettings.arguments) {
+								elt = element(name("argument"), anArgument);
 								listArguments.add(elt);
 							}
 						}
@@ -676,7 +680,7 @@ public class JMeterPluginsMojo extends AbstractMojo {
 	public static class JMeterProcessJVMSettings {
 		Integer xms;
 		Integer xmx;
-		List<Argument> arguments;
+		List<String> arguments = new ArrayList<>();
 
 		@Override
 		public String toString() {
@@ -692,30 +696,6 @@ public class JMeterPluginsMojo extends AbstractMojo {
 		}
 	}
 
-	/**
-	 * More parameters for JVM launch in the &lt;jMeterProcessJVMSettings&gt;
-	 * @author vdaburon
-	 * <br>
-	 * E.g. :<pre>{@code
-	<arguments>
-		<argument>-Xprof</argument>
-		<argument>-Xfuture</argument>
-	</arguments> 
-	 }</pre>
-	 *
-	 **/ 
-	public static class Argument {
-		String argument;
-
-		@Override
-		public String toString() {
-			StringBuilder builder = new StringBuilder();
-			builder.append("Argument [argument=");
-			builder.append(argument);
-			builder.append("]");
-			return builder.toString();
-		}
-	}
 
 	/**
 	 * Parameters for FilterResultParam

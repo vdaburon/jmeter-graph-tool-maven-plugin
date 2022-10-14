@@ -5,7 +5,7 @@
 
     <groupId>io.github.vdaburon</groupId>
     <artifactId>jmeter-graph-tool-maven-plugin</artifactId>
-    <version>1.1</version>
+    <version>1.2</version>
     <packaging>maven-plugin</packaging>
     <name>JMeter Graph and Tool Maven Plugin</name>
     <description>A maven plugin to include features from jmeter-plugins.org for JMeterPluginsCMD Command Line Tool to create graphs, export csv files from jmeter result files and Filter Result tool.</description>
