@@ -372,14 +372,20 @@ E.g :
 
 ```xml
 <jMeterProcessJVMSettings> 
-		<xms>1024</xms>
-		<xmx>2048</xmx>
-		<arguments>
-			<argument>-Xprof</argument>
-			<argument>-Xfuture</argument>
-		</arguments>
+    <xms>1024</xms>
+    <xmx>2048</xmx>
+    <arguments>
+        <argument>-Duser.language=en</argument>
+    </arguments>
 </jMeterProcessJVMSettings>
 ```
+
+## Compagnion tools
+2 tools are also used with this maven plugin :
+
+* [JMReportCsvToHtml](https://github.com/vdaburon/JMReportCsvToHtml) create a html table from report csv file (Report : Aggregate, Summary or Synthesis)
+* [CreateHtmlForFilesInDirectory](https://github.com/vdaburon/CreateHtmlForFilesInDirectory) recursively scans a directory looking for files of different types to generate a link or include the content in the generated html page. Create a little static web site.
+
 ## Full example 
 A full example, use **jmeter-maven-plugin** [see](https://github.com/jmeter-maven-plugin/jmeter-maven-plugin) and **jmeter-graph-tool-maven-plugin**.
 
