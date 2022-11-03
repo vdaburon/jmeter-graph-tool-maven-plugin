@@ -312,7 +312,7 @@ You can also bind the graph-generation to a maven-phase, e.g. `verify`:
 - HitsPerSecond [more informations](https://jmeter-plugins.org/wiki/HitsPerSecond/)
 - LatenciesOverTime [more informations](https://jmeter-plugins.org/wiki/LatenciesOverTime/)
 - PerfMon [more informations](https://jmeter-plugins.org/wiki/PerfMon/)
-- DbMon (trouble with this plugin because log library error) [more informations](https://jmeter-plugins.org/wiki/PerfMon/)
+- DbMon (trouble with this plugin because log library error) [more informations](https://jmeter-plugins.org/wiki/DbMon/)
 - JMXMon [more informations](https://jmeter-plugins.org/wiki/JMXMon/)
 - ResponseCodesPerSecond [more informations](https://jmeter-plugins.org/wiki/ResponseCodesPerSecond/)
 - ResponseTimesDistribution [more informations](https://jmeter-plugins.org/wiki/RespTimesDistribution/)
