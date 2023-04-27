@@ -59,7 +59,7 @@ Apache httpd monitoring with Page Data Extractor plugin
 
 ## Usage
 
-The maven groupId, artifactId and version, this plugin is in the **Maven Central Repository**
+The maven groupId, artifactId and version, this plugin is in the **Maven Central Repository** [![Maven Central jmeter-graph-tool-maven-plugin](https://maven-badges.herokuapp.com/maven-central/io.github.vdaburon/jmeter-graph-tool-maven-plugin/badge.svg)](https://maven-badges.herokuapp.com/maven-central/io.github.vdaburon/jmeter-graph-tool-maven-plugin)
 
 ```xml
 <groupId>io.github.vdaburon</groupId>
