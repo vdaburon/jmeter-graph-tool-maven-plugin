@@ -59,7 +59,7 @@ Apache httpd monitoring with Page Data Extractor plugin
 
 ## Usage
 
-The maven groupId, artifactId and version, this plugin is in the **Maven Central Repository**
+The maven groupId, artifactId and version, this plugin is in the **Maven Central Repository** [![Maven Central jmeter-graph-tool-maven-plugin](https://maven-badges.herokuapp.com/maven-central/io.github.vdaburon/jmeter-graph-tool-maven-plugin/badge.svg)](https://maven-badges.herokuapp.com/maven-central/io.github.vdaburon/jmeter-graph-tool-maven-plugin)
 
 ```xml
 <groupId>io.github.vdaburon</groupId>
@@ -312,7 +312,7 @@ You can also bind the graph-generation to a maven-phase, e.g. `verify`:
 - HitsPerSecond [more informations](https://jmeter-plugins.org/wiki/HitsPerSecond/)
 - LatenciesOverTime [more informations](https://jmeter-plugins.org/wiki/LatenciesOverTime/)
 - PerfMon [more informations](https://jmeter-plugins.org/wiki/PerfMon/)
-- DbMon (trouble with this plugin because log library error) [more informations](https://jmeter-plugins.org/wiki/PerfMon/)
+- DbMon (trouble with this plugin because log library error) [more informations](https://jmeter-plugins.org/wiki/DbMon/)
 - JMXMon [more informations](https://jmeter-plugins.org/wiki/JMXMon/)
 - ResponseCodesPerSecond [more informations](https://jmeter-plugins.org/wiki/ResponseCodesPerSecond/)
 - ResponseTimesDistribution [more informations](https://jmeter-plugins.org/wiki/RespTimesDistribution/)
