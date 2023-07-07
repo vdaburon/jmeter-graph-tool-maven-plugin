@@ -386,9 +386,15 @@ This tools are also used with this maven plugin :
 * [JMReportCsvToHtml](https://github.com/vdaburon/JMReportCsvToHtml) Create a html table from report csv file (Report : Aggregate, Summary or Synthesis)
 * [CreateHtmlForFilesInDirectory](https://github.com/vdaburon/CreateHtmlForFilesInDirectory) Recursively scans a directory looking for files of different types to generate a link or include the content in the generated html page. Create a little static web site.
 * [CreateGitlabWikiPageForFilesInDirectory](https://github.com/vdaburon/CreateGitlabWikiPageForFilesInDirectory) Generating a Gitlab Wiki Page that references or includes various files.
-* [JUnitReportKpiJMeterReportCsv](https://github.com/vdaburon/JUnitReportKpiJMeterReportCsv) Read KPI declarations in a file and apply the KPI assertion on a JMeter Report CSV file and generates a result file in JUnit XML format.
-* [JUnitReportKpiCompareJMeterReportCsv](https://github.com/vdaburon/JUnitReportKpiCompareJMeterReportCsv) Compare 2 load tests JMeter Report CSV File and create a JUnit Report based on custom Key Performance Indicators (KPIs).
-* [JUnitReportKpiJMeterDashboardStats](https://github.com/vdaburon/JUnitReportKpiJMeterDashboardStats) Read KPI declarations in a file and apply the KPI assertion on a JMeter Dashboard Statistics Json file and generates a result file in JUnit XML format.
+* [JUnitReportKpiJMeterReportCsv](https://github.com/vdaburon/JUnitReportKpiJMeterReportCsv) Read KPI declarations in a file and apply the KPI assertion on a JMeter Report CSV file and generates a result file in JUnit XML format and export also in Html, CSV and JSON formats.
+* [JUnitReportKpiCompareJMeterReportCsv](https://github.com/vdaburon/JUnitReportKpiCompareJMeterReportCsv) Compare 2 load tests JMeter Report CSV File and create a JUnit Report based on custom Key Performance Indicators (KPIs) and export also in Html, CSV and JSON formats.
+* [JUnitReportKpiJMeterDashboardStats](https://github.com/vdaburon/JUnitReportKpiJMeterDashboardStats) Read KPI declarations in a file and apply the KPI assertion on a JMeter Dashboard Statistics Json file and generates a result file in JUnit XML format and export also in Html, CSV and JSON formats.
+
+### Tools installed with jmeter-plugins-manager from jmeter-plugins.org
+This tools could be installed with the jmeter-plugins-manager in Apache JMeter.
+* [JUnitReportKpiJMeterReportCsv](https://github.com/vdaburon/JUnitReportKpiJMeterReportCsv) Read KPI declarations in a file and apply the KPI assertion on a JMeter Report CSV file and generates a result file in JUnit XML format and export also in Html, CSV and JSON formats.
+* [JUnitReportKpiCompareJMeterReportCsv](https://github.com/vdaburon/JUnitReportKpiCompareJMeterReportCsv) Compare 2 load tests JMeter Report CSV File and create a JUnit Report based on custom Key Performance Indicators (KPIs) and export also in Html, CSV and JSON formats.
+* [JUnitReportKpiJMeterDashboardStats](https://github.com/vdaburon/JUnitReportKpiJMeterDashboardStats) Read KPI declarations in a file and apply the KPI assertion on a JMeter Dashboard Statistics Json file and generates a result file in JUnit XML format and export also in Html, CSV and JSON formats.
 
 
 ## Full example 
